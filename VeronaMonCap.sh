@@ -32,7 +32,7 @@ touch RomeAndJuliet.chart.txt
 echo "A bar chart of relative frequencies of mentions" > VerMonCap.chart.txt
 echo "of Verona, Montague and Capulet, from the Shakespeare play" >> VerMonCap.chart.txt
 echo "" >> VerMonCap.chart.txt
-echo -n "Verona  " >> VerMonCap.chart.txt
+echo -n "Verona   " >> VerMonCap.chart.txt
 # Taken from
 # https://stackoverflow.com/questions/17181787/how-to-use-variables-in-a-bash-for-loop#17181832
 for i in $( eval echo {0..$verona_freq}); do
