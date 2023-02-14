@@ -1,0 +1,6 @@
+A bar chart of relative frequencies of mentions
+of Verona, Montague and Capulet, from the Shakespeare play
+
+Verona  #######
+Montague   #####################
+Capulet   #######################################################################
