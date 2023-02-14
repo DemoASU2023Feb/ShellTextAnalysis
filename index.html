@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--	A slide template based on
+
+	
+	https://www.geeksforgeeks.org/programming-a-slideshow-with-html-and-css/
+	https://stackoverflow.com/questions/13114819/positioning-elements-at-top-right-of-div
+	https://singaporecss.github.io/talk.css/
+	https://ondras.github.io/maslo
+	https://chenhuijing.com/blog/html-slides-without-frameworks/
+-->
+	<title>Slide template</title>
+	<style>
+	body {
+		font-family: Helvetica, sans-serif;
+		padding: 5%;
+		text-align: left;
+		font-size: 50;
+	}
+	
+	/* Styling the area of the slides */
+	
+	#slideshow {
+		overflow: hidden;
+		height: 510px;
+		width: 728px;
+		margin: 0 auto;
+	}
+	
+	/* Style each of the sides
+	with a fixed width and height */
+	
+	.slide {
+		float: left;
+		height: 510px;
+		width: 728px;
+	}
+
+	.slide-number {
+		text-align: center;
+	}
+	
+	.slide-wrapper {
+		
+		/* Calculate the total width on the
+	basis of number of slides */
+		width: calc(728px * 4);
+		
+	}
+	
+	/* Set the background color
+	of each of the slides */
+	
+	.slide:nth-child(1) {
+		background: #8C1D40;
+	}
+	
+	.slide:nth-child(2) {
+		background: #FFC627;
+	}
+	
+	.slide:nth-child(3) {
+		background: #FFFFFF;
+	}
+	
+
+	</style>
+</head>
+
+<body>
+	
+	<!-- Define the slideshow container -->
+	<div id="slideshow">
+		<div class="slide-wrapper">
+			
+			<!-- Define each of the slides
+		and write the content -->
+			<div id="1" style="position:relative;" class="slide">
+				<h1 class="slide-number" style="color:#FFC627">
+					A Demonstration Slide Template
+				</h1>
+				<a href="#2" style="position:absolute;bottom:5%;right:10%;">Next</a>
+			</div>
+			<div id="2" style="position:relative;" class="slide">
+				<h1 class="slide-number">
+					ASU Colors and HTML
+				</h1>
+				<ul>
+					<li>The <a href="https://brandguide.asu.edu/brand-elements/design/color">ASU Brand Guide</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics">Mozilla MDN HTML Guide</a> </li>
+					<li><a href="https://www.w3schools.com/html/">W3Schools HTML Tutorial</a></li>
+				</ul>
+				<a href="#1" style="position:absolute;bottom:5%;left:10%;">Back</a>
+				<a href="#3" style="position:absolute;bottom:5%;right:10%;">Next</a>
+			</div>
+			<div id="3" style="position:relative;" class="slide">
+				<h1 class="slide-number">
+					Some Shell Commands
+				</h1>
+				 <table>
+					 <tr>
+						 <th>Command</th>
+						 <th>Explanation</th>
+					 </tr>
+					 <tr>
+						 <td>cd</td>
+						 <td>change directory</td>
+					 </tr>
+					 <tr>
+						 <td>ls</td>
+						 <td>list files in current directory</td>
+					 </tr>
+					 <tr>
+						 <td>pwd</td>
+						 <td>print working directory</td>
+					 </tr>
+				 </table> 
+				<a href="#2" style="position:absolute;bottom:5%;left:10%;">Back</a>
+				<a href="#1" style="position:absolute;bottom:5%;right:10%;">Begin</a>
+			</div>
+	</div>
+</body>
+</html>
+
